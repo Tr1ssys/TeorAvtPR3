@@ -38,7 +38,7 @@ public class Lexer {
 
     private Token matchNumber() {
 
-        Pattern numberPattern = Pattern.compile("^[-+]?[0-9]*[.,][0-9]+(?:[eE][-+]?[0-9]+)?$");
+        Pattern numberPattern = Pattern.compile("^[-+]?[0-9]*[.,]?[0-9]+(?:[eE][-+]?[0-9]+)?");
 
         int matched = match(numberPattern);
 
